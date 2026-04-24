@@ -986,9 +986,47 @@ ul { list-style: disc; padding-left: 20px; }
       <li><a href="https://www.sdcity.edu/about/leadership/student-services/student_affairs/index.aspx">Student Affairs</a></li>
     </ul>
 
+    <!-- Makerspace Hours box -->
+    <div class="sidebar-contact">
+      <div class="contact-head">Makerspace Hours</div>
+      <div class="contact-body" style="line-height: .8;">
+        <strong style="margin-top: 5px;">Monday – Thursday</strong>
+        <br>9:30 AM – 5:30 PM<br>
+        <strong style="margin-top: 25px;">Friday</strong>
+        <br>8:00 AM – 12:00 PM
+        <br>
+        <a href="https://outlook.office365.com/book/YoSoySTEMMakerspaceAppointments@sdccd.edu/?ismsaljsauthenabled=true"
+           target="_blank" rel="noopener"
+           class="btn-red" style="margin-top: 15px;">
+          📅 Book Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Makerspace Contact box -->
+    <div class="sidebar-contact">
+      <div class="contact-head">Makerspace Contact</div>
+      <div class="contact-body">
+        <strong>Yo Soy STEM Makerspace</strong>
+        Room R301, LRC Building<br>
+        3rd Floor — near elevator
+        <div class="phone-row">
+          &#128222; <a href="tel:+16193884195">(619) 388-4195</a>
+        </div>
+        <div class="dir-link">
+          <span class="dir-icon">✉️</span>
+          <a href="mailto:City_YoSoySTEM@sdccd.edu">City_YoSoySTEM@sdccd.edu</a>
+        </div>
+        <div class="dir-link">
+          <span class="dir-icon">📍</span>
+          <a href="https://maps.app.goo.gl/eNLUwxMs3ktfohKz9" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Us box — maroon header, white body -->
     <div class="sidebar-contact">
-      <div class="contact-head">Contact Us</div>
+      <div class="contact-head">Contact SDCC</div>
       <div class="contact-body">
         <strong>San Diego City College</strong>
         1313 Park Boulevard<br>
@@ -1004,23 +1042,6 @@ ul { list-style: disc; padding-left: 20px; }
           <span class="dir-icon">&#127970;</span>
           <a href="https://www.sdcity.edu/directory/" target="_blank" rel="noopener">Offices Directory</a>
         </div>
-      </div>
-    </div>
-
-    <!-- Makerspace Hours box -->
-    <div class="sidebar-contact">
-      <div class="contact-head">Makerspace Hours</div>
-      <div class="contact-body" style="line-height: .8;">
-        <strong style="margin-top: 5px;">Monday – Thursday</strong>
-        <br>9:30 AM – 5:30 PM<br>
-        <strong style="margin-top: 25px;">Friday</strong>
-        <br>8:00 AM – 12:00 PM
-        <br>
-        <a href="https://outlook.office365.com/book/YoSoySTEMMakerspaceAppointments@sdccd.edu/?ismsaljsauthenabled=true"
-           target="_blank" rel="noopener"
-           class="btn-red" style="margin-top: 15px;">
-          📅 Book Now
-        </a>
       </div>
     </div>
 
@@ -1075,7 +1096,7 @@ ul { list-style: disc; padding-left: 20px; }
       position: absolute; right: 20px; top: 50%;
       transform: translateY(-50%);
       display: flex; gap: 8px; align-items: center;
-      opacity: 0.35;
+      opacity: 0.5;
     }
     .prog-hero .hero-deco span {
       font-size: 2rem; display: block;
@@ -1106,7 +1127,7 @@ ul { list-style: disc; padding-left: 20px; }
       margin-bottom: 18px; font-style: italic; font-size: 0.88rem; color: #555; line-height: 1.75;
     }
     .about-box p { font-size: 0.93rem; color: #444; margin-bottom: 12px; line-height: 1.75; }
-    .about-box strong { color: #7c2324; }
+    .about-box strong { color: #222; }
     .goals-chips { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 18px; }
     .g-chip {
       background: linear-gradient(135deg, #fdf5f5, #fff);
@@ -1128,6 +1149,7 @@ ul { list-style: disc; padding-left: 20px; }
       background: linear-gradient(90deg, #7c2324, #c0392b); border-radius: 8px 8px 0 0;
     }
     .svc-card:hover { box-shadow: 0 6px 20px rgba(124,35,36,0.13); transform: translateY(-3px); }
+    .svc-card.no-hover:hover { box-shadow: none; transform: none; }
     .svc-card .si { font-size: 1.9rem; display: block; margin-bottom: 10px; }
     .svc-card h3 { font-size: 0.94rem; font-weight: 700; color: #222; margin-bottom: 7px; }
     .svc-card p { font-size: 0.83rem; color: #555; line-height: 1.6; margin-bottom: 10px; }
@@ -1163,13 +1185,17 @@ ul { list-style: disc; padding-left: 20px; }
     .ms-loc {
       background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4);
       color: #fff; font-size: 0.79rem; font-weight: 600; padding: 5px 13px; border-radius: 20px;
+      text-decoration: none; transition: background 0.2s, border-color 0.2s;
+    }
+    .ms-loc:hover {
+      background: rgba(255,255,255,0.32); border-color: rgba(255,255,255,0.7); color: #fff;
     }
     .ms-intro-grid {
       display: grid; grid-template-columns: 1fr 320px; gap: 24px;
       padding: 22px 24px 0; align-items: start;
     }
     .ms-intro-grid p { font-size: 0.92rem; color: #444; line-height: 1.75; margin-bottom: 10px; }
-    .ms-intro-grid strong { color: #7c2324; }
+    .ms-intro-grid strong { color: #222; }
     .ms-photo-box {
       border-radius: 8px; border: 1px solid #e0e0e0; overflow: hidden;
       background: linear-gradient(135deg, #f5e8e8, #fdf0f0);
@@ -1189,9 +1215,8 @@ ul { list-style: disc; padding-left: 20px; }
     .ic {
       background: #fff; border: 1px solid #e8b8b8; border-radius: 20px;
       padding: 4px 12px; font-size: 0.79rem; color: #444;
-      display: flex; align-items: center; gap: 5px; transition: background 0.15s;
+      display: flex; align-items: center; gap: 5px;
     }
-    .ic:hover { background: #fdf0f0; }
 
     .eq-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 20px; }
     .eq-card {
@@ -1202,7 +1227,7 @@ ul { list-style: disc; padding-left: 20px; }
     .eq-card.hi { border-color: #7c2324; border-width: 1.5px; }
     .eq-card .eq-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
     .eq-card .eq-emoji { font-size: 1.7rem; flex-shrink: 0; line-height: 1; }
-    .eq-card h4 { font-size: 0.88rem; font-weight: 700; color: #222; margin-bottom: 4px; }
+    .eq-card h4 { font-size: 0.88rem; font-weight: 700; color: #7c2324; margin-bottom: 4px; }
     .eq-card p { font-size: 0.8rem; color: #555; line-height: 1.55; margin: 0 0 8px; }
     .eq-tags { display: flex; gap: 5px; flex-wrap: wrap; }
     .bg  { background: #e8f5e9; color: #2e7d32; font-size: 0.67rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
@@ -1217,7 +1242,7 @@ ul { list-style: disc; padding-left: 20px; }
     .rules-box h4 { font-size: 0.92rem; font-weight: 700; color: #222; margin-bottom: 10px; }
     .rules-box ul { list-style: disc; padding-left: 20px; }
     .rules-box ul li { font-size: 0.86rem; color: #444; margin-bottom: 9px; line-height: 1.65; }
-    .rules-box ul li em { font-style: italic; color: #7c2324; font-weight: 600; }
+    .rules-box ul li em { font-style: italic; color: #222; font-weight: 600; }
 
     .btn-book-blue {
       display: block; width: fit-content; margin: 0 auto 18px;
@@ -1247,7 +1272,7 @@ ul { list-style: disc; padding-left: 20px; }
       margin-bottom: 9px; background: #fff;
       transition: box-shadow 0.18s, transform 0.15s, border-color 0.15s;
     }
-    .evt-row:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.09); transform: translateY(-2px); border-color: #f0cece; }
+    .evt-row:hover { box-shadow: none; transform: none; }
     .evt-cal {
       background: #7c2324; color: #fff; border-radius: 6px;
       min-width: 48px; padding: 7px 9px; text-align: center; flex-shrink: 0;
@@ -1298,22 +1323,19 @@ ul { list-style: disc; padding-left: 20px; }
     .t-card {
       border: 1px solid #e8e8e8; border-radius: 10px; padding: 20px 14px;
       text-align: center; background: #fff;
-      transition: box-shadow 0.2s;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.11);
     }
-    .t-card:hover { box-shadow: 0 5px 18px rgba(0,0,0,0.11); }
     .t-av {
-      width: 74px; height: 74px; border-radius: 50%; margin: 0 auto 11px;
+      width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 11px;
       border: 3px solid #f0d0d0; background: #7c2324;
       display: flex; align-items: center; justify-content: center;
       color: #fff; font-size: 1.1rem; font-weight: 700; overflow: hidden;
       flex-shrink: 0;
     }
     .t-av img {
-      width: 74px; height: 74px; border-radius: 50%;
+      width: 110px; height: 110px; border-radius: 50%;
       object-fit: cover; display: block;
-      /* prevent glitch on hover */
-      pointer-events: none; transform: none !important;
-      transition: none !important;
+      pointer-events: none;
     }
     .t-card h4 { font-size: 0.88rem; font-weight: 700; color: #222; margin-bottom: 3px; }
     .t-card .tr { font-size: 0.77rem; color: #7c2324; font-weight: 600; }
@@ -1381,12 +1403,14 @@ ul { list-style: disc; padding-left: 20px; }
 
   <!-- ═══ PAGE NAVIGATION ═══ -->
   <div class="page-nav">
-    <div class="page-nav-label">Jump to a section:</div>
+    <div class="page-nav-label" style="color: #4a0d18;">Jump to a section:</div>
     <a href="#services">⚙️ Services</a>
     <a href="#makerspace">🛠️ Makerspace</a>
     <a href="#events">📅 Events</a>
     <a href="#bridge">🌉 STEM Bridge</a>
+    <div style="width:100%;"></div>
     <a href="#transfer">🏫 Transfer</a>
+    <a href="#tutoring">📚 Tutoring</a>
     <a href="#team">👋 Team</a>
     <a href="#hsi">🏛️ HSI</a>
     <a href="#internships">💼 Internships</a>
@@ -1403,11 +1427,10 @@ ul { list-style: disc; padding-left: 20px; }
       Title III HSI STEM Grant Program &mdash; San Diego City College<br>
       <em style="font-style:normal; font-size:0.88rem;">"Advancing the success of Latinx/Chicanx &amp; low-income students in STEM"</em>
     </p>
-    <a href="/cdn-cgi/l/email-protection#67040e131e381e0814081e1413020a27140304040349020312" class="hero-email">✉ <span class="__cf_email__" data-cfemail="cba8a2bfb294b2a4b8a4b2b8bfaea68bb8afa8a8afe5aeafbe">[email&#160;protected]</span></a>
   </div>
 
   <!-- ═══ 1. ABOUT ═══ -->
-  <h2 class="mc-h2" id="about"><span class="sh-icon">🌟</span> About the Program</h2>
+  <h2 class="mc-h2" id="about" style="margin-top:38px;"><span class="sh-icon">🌟</span> About the Program</h2>
   <div class="about-box">
     <div class="quote-strip">
       "This competition specifically acknowledges the importance of student-centered programs that will increase the number of Hispanic and low-income students who graduate with degrees in STEM fields, as well as the need to promote support systems to ensure that community college students will continue to pursue STEM degrees once enrolled at a four-year institution." — <strong>U.S. Department of Education, 2021</strong>
@@ -1440,28 +1463,7 @@ ul { list-style: disc; padding-left: 20px; }
       <h3>Tutoring</h3>
       <p>Struggling with calculus, chemistry, or coding? STEM tutors are here to help you work through tough material and stay on track.</p>
       <span class="free-pill">● Free</span><br>
-      <a href="/cdn-cgi/l/email-protection#187b716c614761776b77616b6c7d75586b7c7b7b7c367d7c6d" class="svc-link">Get Tutoring →</a>
-    </div>
-    <div class="svc-card">
-      <span class="si">🔗</span>
-      <h3>Peer Mentorship</h3>
-      <p>Connect with inspiring Latinx/Chicanx faculty, staff, and STEM professionals. Guidance on transfer, careers, and internships.</p>
-      <span class="free-pill">● Free</span><br>
-      <a href="/cdn-cgi/l/email-protection#8cefe5f8f5d3f5e3ffe3f5fff8e9e1ccffe8efefe8a2e9e8f9" class="svc-link">Learn More →</a>
-    </div>
-  </div>
-  <div class="svc-grid" style="margin-bottom:14px;">
-    <div class="svc-card">
-      <span class="si">💻</span>
-      <h3>Daily Laptop &amp; Calculator Checkout</h3>
-      <p>Need tech for your day? Yo Soy STEM students can check out laptops and calculators on campus — no cost, no hassle.</p>
-      <span class="free-pill">● Free</span>
-    </div>
-    <div class="svc-card">
-      <span class="si">👥</span>
-      <h3>Group Study Sessions</h3>
-      <p>S-401 Study Space is reserved for Yo Soy STEM students. Build your study community and find your academic crew.</p>
-      <span class="free-pill">● Free</span>
+      <a href="#tutoring" class="svc-link">Get Tutoring →</a>
     </div>
     <div class="svc-card">
       <span class="si">🗓️</span>
@@ -1469,6 +1471,26 @@ ul { list-style: disc; padding-left: 20px; }
       <p>Transfer panels, career exploration, paid summer undergraduate research, and more. Follow on Instagram for updates.</p>
       <span class="free-pill">● Free</span><br>
       <a href="https://www.instagram.com/sdcityhsi" target="_blank" rel="noopener" class="svc-link">@sdcityhsi →</a>
+    </div>
+  </div>
+  <div class="svc-grid" style="margin-bottom:14px;">
+    <div class="svc-card no-hover">
+      <span class="si">💻</span>
+      <h3>Daily Laptop &amp; Calculator Checkout</h3>
+      <p>Need tech for your day? Yo Soy STEM students can check out laptops and calculators on campus — no cost, no hassle.</p>
+      <span class="free-pill">● Free</span>
+    </div>
+    <div class="svc-card no-hover">
+      <span class="si">👥</span>
+      <h3>Group Study Sessions</h3>
+      <p>S-401 Study Space is reserved for Yo Soy STEM students. Build your study community and find your academic crew.</p>
+      <span class="free-pill">● Free</span>
+    </div>
+    <div class="svc-card no-hover">
+      <span class="si">🔗</span>
+      <h3>Peer Mentorship</h3>
+      <p>Connect with inspiring Latinx/Chicanx faculty, staff, and STEM professionals. Guidance on transfer, careers, and internships.</p>
+      <span class="free-pill">● Free</span>
     </div>
   </div>
 
@@ -1485,13 +1507,13 @@ ul { list-style: disc; padding-left: 20px; }
   <div class="ms-wrap">
     <div class="ms-topbar">
       <h3>🔧 Yo Soy STEM Makerspace — Room R301</h3>
-      <span class="ms-loc">📍 3rd Floor, Learning Resource Center (LRC) — near elevator</span>
+      <a href="https://maps.app.goo.gl/eNLUwxMs3ktfohKz9" target="_blank" rel="noopener" class="ms-loc">📍 3rd Floor, Learning Resource Center (LRC) — near elevator</a>
     </div>
     <div class="ms-intro-grid">
       <div>
         <p>Welcome to the <strong>Yo Soy STEM Makerspace</strong>, located near the elevator on the third floor of the Learning Resource Center (LRC) in <strong>room R301</strong>. This creative hub is open to <strong>all SDCC students</strong>, whether you're enrolled in a STEM program or not!</p>
         <p>Bring your ideas to life through design, fabrication, and customization. <strong>No prior experience is necessary</strong> — Yo Soy STEM staff will show you how to use every piece of equipment.</p>
-        <p style="font-size:0.85rem; color:#666;">📦 <em>Materials provided at no cost for prototyping. Students creating items in bulk should bring their own supplies.</em></p>
+        <p style="font-size:0.85rem; color:#666;">📦 <em>Materials provided at no cost for prototyping. Students creating items in bulk should bring their own supplies (Contact us for a list of compatible materials).</em></p>
       </div>
       <div class="ms-photo-box">
         <span class="pi">🖼️</span>
@@ -1512,6 +1534,8 @@ ul { list-style: disc; padding-left: 20px; }
           <span class="ic">📐 Engineering models</span>
           <span class="ic">🏠 Architectural mock-ups</span>
           <span class="ic">🌟 Club &amp; event merch</span>
+          <span class="ic">📌 Custom buttons &amp; pins</span>
+          <span class="ic">🔌 Electronics &amp; soldering projects</span>
         </div>
       </div>
 
@@ -1520,7 +1544,7 @@ ul { list-style: disc; padding-left: 20px; }
         <div class="eq-card hi">
           <div class="eq-top"><span class="eq-emoji">✂️</span>
             <div><h4>Cricut Maker® 3</h4>
-              <div class="eq-tags"><span class="bg">Drop-In Available</span><span class="bgr">No Appointment</span></div>
+              <div class="eq-tags"><span class="bg">Drop-In Available</span><span class="bg">Appointment Available</span></div>
             </div>
           </div>
           <p>Cut over <strong>100 different types of materials</strong> — vinyl, iron-on, paper, fabric, leather, and more. Perfect for stickers, apparel, and creative projects.</p>
@@ -1528,7 +1552,7 @@ ul { list-style: disc; padding-left: 20px; }
         <div class="eq-card hi">
           <div class="eq-top"><span class="eq-emoji">🗜️</span>
             <div><h4>Cricut Autopress™</h4>
-              <div class="eq-tags"><span class="bg">Drop-In Available</span></div>
+              <div class="eq-tags"><span class="bg">Drop-In Available</span><span class="bg">Appointment Available</span></div>
             </div>
           </div>
           <p>A professional <strong>heat press for fabric and apparel</strong>. Transfer your Cricut designs onto T-shirts, tote bags, and wearables.</p>
@@ -1541,21 +1565,29 @@ ul { list-style: disc; padding-left: 20px; }
           </div>
           <p>Cut &amp; engrave <strong>wood, cardboard, leather, and acrylic</strong>. Make signs, gifts, engineering prototypes. First visit = training session.</p>
         </div>
-        <div class="eq-card">
+        <div class="eq-card hi">
           <div class="eq-top"><span class="eq-emoji">🖨️</span>
             <div><h4>3D Printer</h4>
-              <div class="eq-tags"><span class="bb">Coming Soon</span><span class="bo">📅 Appointment</span></div>
+              <div class="eq-tags"><span class="bo">📅 Appointment Only</span></div>
             </div>
           </div>
           <p>Print <strong>3D objects in plastic filament (PLA)</strong>. Turn CAD designs into real physical prototypes for engineering, art, and more.</p>
         </div>
-        <div class="eq-card">
+        <div class="eq-card hi">
           <div class="eq-top"><span class="eq-emoji">☕</span>
             <div><h4>Mug Press</h4>
-              <div class="eq-tags"><span class="bb">Coming Soon</span></div>
+              <div class="eq-tags"><span class="bg">Drop-In Available</span><span class="bg">Appointment Available</span></div>
             </div>
           </div>
           <p>Press a <strong>custom vinyl design onto a mug</strong>. Perfect for personalized gifts, club merchandise, and keepsakes.</p>
+        </div>
+        <div class="eq-card hi">
+          <div class="eq-top"><span class="eq-emoji">📌</span>
+            <div><h4>Button Maker</h4>
+              <div class="eq-tags"><span class="bg">Drop-In Available</span></div>
+            </div>
+          </div>
+          <p>Create <strong>custom pins and buttons</strong> with your own designs. Great for clubs, events, personal expression, and giveaways.</p>
         </div>
       </div>
 
@@ -1563,8 +1595,8 @@ ul { list-style: disc; padding-left: 20px; }
         <h4>📋 Rules &amp; Procedures</h4>
         <ul>
           <li><em>Drop-in Hours:</em> Mon–Thur 9:30 AM – 5:30 PM; Fri 8:00 AM – 12:00 PM <span style="color:#777;">(for machines that do not require appointments)</span></li>
-          <li>Appointments for Makerspace machines are for <strong>1 hour</strong>. The Glowforge and 3D printer tend to take time, so appointments are required. The <strong>first appointment is always a training session</strong> on that machine.</li>
-          <li>Materials are provided at <strong>no cost</strong> for creating prototypes. Students creating items in bulk should bring their own supplies.</li>
+          <li>Most machines are available <strong>drop-in or by appointment</strong>. The <strong>Glowforge and 3D printer are appointment only</strong>. The <strong>Button Maker is drop-in only</strong>. Appointments are <strong>1 hour</strong>, and the <strong>first appointment is always a training session</strong>.</li>
+          <li>Materials are provided at <strong>no cost</strong> for creating prototypes. Students creating items in bulk should bring their own supplies.<br>(Contact us for a list of compatible materials.)</li>
         </ul>
       </div>
 
@@ -1574,11 +1606,11 @@ ul { list-style: disc; padding-left: 20px; }
       </a>
 
       <div class="ms-contact">
-        <strong>Questions?</strong> Contact <strong>Lawson Hardrick-Cervantes</strong> at
-        <a href="/cdn-cgi/l/email-protection#6c00040d1e081e050f070f091e1a0d0218091f2c1f080f0f0842090819"><span class="__cf_email__" data-cfemail="f39f9b928197819a909890968185929d879680b38097909097dd969786">[email&#160;protected]</span></a> or
-        <a href="tel:+16193883057">(619) 388-3057</a>.
-        <div class="ms-note">📸 <a href="https://www.instagram.com/sdcityhsi" target="_blank" rel="noopener">@sdcityhsi</a> &nbsp;|&nbsp; 🔗 <a href="https://tinyurl.com/SDCityMakerspaceBookings" target="_blank" rel="noopener">tinyurl.com/SDCityMakerspaceBookings</a></div>
-        <div class="ms-note">**Note: The San Diego Public Library (330 Park Blvd.) also offers 3D printing through their <a href="https://www.sandiego.gov/public-library/central-library/idea-lab" target="_blank" rel="noopener"><strong>Idea Lab</strong></a>.</div>
+        <strong>Questions?</strong> Contact Us @
+        <a href="mailto:City_YoSoySTEM@sdccd.edu">City_YoSoySTEM@sdccd.edu</a> or
+        <a href="tel:+16193884195">(619) - 388 - 4195</a>.
+        <div class="ms-note">**Note: The San Diego Public Library (330 Park Blvd.) also offers offers many of the same services and are 
+          <a href="https://www.sandiego.gov/public-library/central-library/idea-lab" target="_blank" rel="noopener">open to the public</a>.</div>
       </div>
     </div>
   </div>
@@ -1658,44 +1690,197 @@ ul { list-style: disc; padding-left: 20px; }
   <div class="team-div">Leadership</div>
   <div class="team-sec">
     <div class="t-card">
-      <div class="t-av"><img src="https://www.sdcity.edu/about/leadership/student-services/imgs/nydia-dominguez.JPG" alt="Nydia Dominguez" onerror="this.style.display='none'; this.parentNode.innerHTML='ND';" /></div>
+      <div class="t-av"><img src="imgs/nydia-dominguez.JPG" alt="Nydia Dominguez" onerror="this.style.display='none'; this.parentNode.innerHTML='ND';" /></div>
       <h4>Nydia Dominguez</h4><div class="tr">Acting Director</div>
     </div>
     <div class="t-card">
-      <div class="t-av"><img src="https://www.sdcity.edu/about/leadership/student-services/imgs/Cecilia.jpg" alt="Cecilia Thibeault" onerror="this.style.display='none'; this.parentNode.innerHTML='CT';" /></div>
+      <div class="t-av"><img src="imgs/Cecilia.jpg" alt="Cecilia Thibeault" onerror="this.style.display='none'; this.parentNode.innerHTML='CT';" /></div>
       <h4>Cecilia Thibeault</h4><div class="tr">Program Support Technician</div>
     </div>
     <div class="t-card">
-      <div class="t-av"><img src="https://www.sdcity.edu/about/leadership/student-services/imgs/lawson.png" alt="Lawson Hardrick-Cervantes" onerror="this.style.display='none'; this.parentNode.innerHTML='LH';" /></div>
+      <div class="t-av"><img src="imgs/lawson.png" alt="Lawson Hardrick-Cervantes" onerror="this.style.display='none'; this.parentNode.innerHTML='LH';" /></div>
       <h4>Lawson Hardrick-Cervantes</h4><div class="tr">Coordinator</div>
     </div>
   </div>
 
   <div class="team-div">Academic Support Leaders</div>
   <div class="team-sec">
-    <div class="t-card">
-      <div class="t-av"><img src="https://www.sdcity.edu/about/leadership/student-services/imgs/Chelsea-Enhanced-SR.jpg" alt="Chelsea Ives" onerror="this.style.display='none'; this.parentNode.innerHTML='CI';" /></div>
+    <div class="t-card" id="tutor-chelsea">
+      <div class="t-av"><img src="imgs/Chelsea-Enhanced-SR.jpg" alt="Chelsea Ives" onerror="this.style.display='none'; this.parentNode.innerHTML='CI';" /></div>
       <h4>Chelsea Ives</h4><div class="tr">Academic Support Leader</div>
     </div>
-    <div class="t-card">
-      <div class="t-av"><img src="https://www.sdcity.edu/about/leadership/student-services/imgs/1655056048993.jpg" alt="Raul Bernal Gonzalez" onerror="this.style.display='none'; this.parentNode.innerHTML='RB';" /></div>
+    <div class="t-card" id="tutor-raul">
+      <div class="t-av"><img src="imgs/1655056048993.jpg" alt="Raul Bernal Gonzalez" onerror="this.style.display='none'; this.parentNode.innerHTML='RB';" /></div>
       <h4>Raul Bernal Gonzalez</h4><div class="tr">Academic Support Leader</div>
     </div>
-    <div class="t-card">
-      <div class="t-av"><img src="https://www.sdcity.edu/about/leadership/student-services/imgs/chrisSpacePortrait.jpg" alt="Chris Patino" onerror="this.style.display='none'; this.parentNode.innerHTML='CP';" /></div>
+    <div class="t-card" id="tutor-chris">
+      <div class="t-av"><img src="imgs/chrisSpacePortrait.jpg" alt="Chris Patino" onerror="this.style.display='none'; this.parentNode.innerHTML='CP';" /></div>
       <h4>Chris Patino</h4><div class="tr">Academic Support Leader</div>
     </div>
+  </div>
+
+  <!-- ═══ TUTORING ═══ -->
+  <h2 class="mc-h2" id="tutoring"><span class="sh-icon">📚</span> Group Study Sessions & Tutoring</h2>
+  <p style="font-size:0.91rem; color:#555; margin-bottom:16px;">Free peer-led group study sessions every week in Spring 2026. Drop in during any session for your subject — no appointment needed!</p>
+
+  <div style="display:flex; flex-direction:column; gap:16px; margin-bottom:24px; width:75%;">
+
+    <!-- Chelsea -->
+    <div class="eq-card hi">
+      <div class="eq-top">
+        <img src="imgs/Chelsea-Enhanced-SR.jpg" alt="Chelsea Ives" style="width:28px; height:28px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+        <div>
+          <h4><a href="#team" style="color:#7c2324; text-decoration:none;">Chelsea Ives</a></h4>
+          <div class="eq-tags"><span class="bgr">Academic Support Leader</span></div>
+        </div>
+      </div>
+      <table style="width:100%; border-collapse:collapse; font-size:0.8rem; margin-top:6px; table-layout:fixed;">
+        <colgroup>
+          <col style="width:35%">
+          <col style="width:12%">
+          <col style="width:12%">
+          <col style="width:41%">
+        </colgroup>
+        <thead><tr style="border-bottom:1px solid #e8b8b8;">
+          <th style="text-align:left; color:#7c2324; padding:4px 4px 4px 0;">Subject</th>
+          <th style="text-align:left; color:#7c2324; padding:4px;">Room</th>
+          <th style="text-align:right; color:#7c2324; padding:4px 12px 4px 4px;">Days</th>
+          <th style="text-align:left; color:#7c2324; padding:4px 4px 4px 28px;">Time</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;" rowspan="2">🧬 BIOL 107</td>
+            <td style="padding:5px 4px; color:#555;" rowspan="2">S-314</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Mon/Wed</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">1:00–2:30 pm</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">11:15 am–12:45 pm</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;" rowspan="2">⚗️ Intro Chem</td>
+            <td style="padding:5px 4px; color:#555;" rowspan="2">S-314</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Mon/Wed</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">9:30–11:00 am</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">1:15–2:45 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Chris -->
+    <div class="eq-card hi">
+      <div class="eq-top">
+        <img src="imgs/chrisSpacePortrait.jpg" alt="Chris Patino" style="width:28px; height:28px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+        <div>
+          <h4><a href="#team" style="color:#7c2324; text-decoration:none;">Chris Patino</a></h4>
+          <div class="eq-tags"><span class="bgr">Academic Support Leader</span></div>
+        </div>
+      </div>
+      <table style="width:100%; border-collapse:collapse; font-size:0.8rem; margin-top:6px; table-layout:fixed;">
+        <colgroup>
+          <col style="width:35%">
+          <col style="width:12%">
+          <col style="width:12%">
+          <col style="width:41%">
+        </colgroup>
+        <thead><tr style="border-bottom:1px solid #e8b8b8;">
+          <th style="text-align:left; color:#7c2324; padding:4px 4px 4px 0;">Subject</th>
+          <th style="text-align:left; color:#7c2324; padding:4px;">Room</th>
+          <th style="text-align:right; color:#7c2324; padding:4px 12px 4px 4px;">Days</th>
+          <th style="text-align:left; color:#7c2324; padding:4px 4px 4px 28px;">Time</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;">📐 Calculus 3</td>
+            <td style="padding:5px 4px; color:#555;">MS-366</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">11:45 am–1:15 pm</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;">📐 Calc Readiness</td>
+            <td style="padding:5px 4px; color:#555;">MS-366</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">2:30–3:45 pm</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;" rowspan="2">➗ Transfer Level Math</td>
+            <td style="padding:5px 4px; color:#555;" rowspan="2">MS-366</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">1:15–2:30 pm</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">3:45–5:00 pm</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;">🔢 Linear Algebra</td>
+            <td style="padding:5px 4px; color:#555;">MS-366</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">5:00–6:00 pm</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px 5px 0; font-weight:700;">📊 Calculus 1</td>
+            <td style="padding:5px 4px; color:#555;">MS-366</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Wed</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">12:15–1:30 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Raul -->
+    <div class="eq-card hi">
+      <div class="eq-top">
+        <img src="imgs/1655056048993.jpg" alt="Raul Bernal Gonzalez" style="width:28px; height:28px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+        <div>
+          <h4><a href="#team" style="color:#7c2324; text-decoration:none;">Raul Bernal Gonzalez</a></h4>
+          <div class="eq-tags"><span class="bgr">Academic Support Leader</span></div>
+        </div>
+      </div>
+      <table style="width:100%; border-collapse:collapse; font-size:0.8rem; margin-top:6px; table-layout:fixed;">
+        <colgroup>
+          <col style="width:35%">
+          <col style="width:12%">
+          <col style="width:12%">
+          <col style="width:41%">
+        </colgroup>
+        <thead><tr style="border-bottom:1px solid #e8b8b8;">
+          <th style="text-align:left; color:#7c2324; padding:4px 4px 4px 0;">Subject</th>
+          <th style="text-align:left; color:#7c2324; padding:4px;">Room</th>
+          <th style="text-align:right; color:#7c2324; padding:4px 12px 4px 4px;">Days</th>
+          <th style="text-align:left; color:#7c2324; padding:4px 4px 4px 28px;">Time</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0e0e0;">
+            <td style="padding:5px 4px 5px 0; font-weight:700;" rowspan="2">⚡ Physics</td>
+            <td style="padding:5px 4px; color:#555;">S-102</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Mon/Wed</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">1:30–3:00 pm</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px; color:#555;">S-105</td>
+            <td style="padding:5px 12px 5px 4px; color:#555; text-align:right;">Tue</td>
+            <td style="padding:5px 4px 5px 28px; color:#555;">12:30–2:00 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 
   <!-- ═══ 8. HSI DESIGNATION ═══ -->
   <h2 class="mc-h2" id="hsi" style="margin-top:40px;"><span class="sh-icon">🏛️</span> HSI Designation</h2>
   <div class="hsi-blk">
-    <div class="hsi-icon"><span class="he">🎓</span>HSI<br>Designated</div>
+    <div class="hsi-icon"><img src="imgs/logo-hsi.jpg" alt="HSI — Hispanic Serving Institution, San Diego City College" style="width:110px; height:110px; object-fit:contain; display:block;" /></div>
     <div>
       <h3>San Diego City College — Formally Designated Hispanic-Serving Institution</h3>
-      <p>San Diego City College is proud to be formally designated a <strong>Hispanic-Serving Institution (HSI)</strong> by the United States Department of Education. This designation enables the Yo Soy STEM grant, which focuses on the intersection of HSI designation and STEM fields.</p>
-      <p>As an HSI, SDCC serves a student body that is majority Hispanic. SDCC is committed to <strong>student success, educational equity, and social justice</strong> — and Yo Soy STEM is one of the ways we live that commitment.</p>
-      <a href="https://www.sdcity.edu/about/leadership/student-services/hsi.aspx" target="_blank" rel="noopener" class="btn-r">Visit the Official SDCC HSI Page →</a>
+      <p>San Diego City College is proud to be formally designated a <strong>Hispanic-Serving Institution (HSI)</strong> by the United States Department of Education, giving us the opportunity to receive the "Yo Soy STEM" grant that focuses on both the intersection of HSI designation with STEM fields.</p>
+      <p>The purpose of the HSI STEM grant at San Diego City College is to <strong>expand educational opportunities and improve the academic attainment of Hispanic and low-income students</strong>, and to expand and enhance the academic offerings, program quality, and institutional stability of colleges and universities that are educating the majority of Hispanic college students. As an HSI, San Diego City College is committed to <strong>student success, educational equity, and social justice</strong>.</p>
     </div>
   </div>
 
@@ -1704,7 +1889,7 @@ ul { list-style: disc; padding-left: 20px; }
   <div class="coming-card">
     <h3>💼 Paid STEM Internship Opportunities</h3>
     <p>Work-based learning experiences through paid STEM internships are coming. Get real-world experience while you're still in school. Program details forthcoming.</p>
-    <a href="/cdn-cgi/l/email-protection#57343e232e082e3824382e2423323a17243334343379323322" class="btn-r">Express Interest →</a>
+    <a href="mailto:City_YoSoySTEM@sdccd.edu" class="btn-r">Express Interest →</a>
   </div>
 
   <!-- ═══ 5. STEM BRIDGE ═══ -->
@@ -1732,10 +1917,8 @@ ul { list-style: disc; padding-left: 20px; }
   <!-- ═══ 6. TRANSFER ═══ -->
   <h2 class="mc-h2" id="transfer"><span class="sh-icon">🏫</span> Transferring as a STEM Major</h2>
   <p style="font-size:0.92rem; color:#444; margin-bottom:10px;">Planning to transfer to a 4-year university as a STEM major? This tutorial walks you through the process from San Diego City College.</p>
-  <div class="vid-placeholder">
-    <span class="vp-icon">🎬</span>
-    <h4>Video Tutorial Goes Here</h4>
-    <p>Replace this placeholder with the updated transfer guidance video for STEM majors.</p>
+  <div class="yt-wrap">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3WwNrB3YRCY?si=t2TR4hnLuoa7fPtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   <p style="font-size:0.84rem; color:#666; margin-top:10px;">
     Need transfer advising now? <a href="https://outlook.office.com/book/YoSoySTEMAcademicCounseling@sdccd.edu/?ismsaljsauthenabled" target="_blank" rel="noopener"><strong>Book an academic counseling appointment →</strong></a>
@@ -1746,7 +1929,7 @@ ul { list-style: disc; padding-left: 20px; }
   <div class="coming-card">
     <h3>📊 Professional Development Sessions</h3>
     <p>Workshops and sessions to build professional skills for your STEM career. Details on upcoming sessions coming soon.</p>
-    <a href="/cdn-cgi/l/email-protection#a9cac0ddd0f6d0c6dac6d0daddccc4e9dacdcacacd87cccddc" class="btn-r">Get Notified →</a>
+    <a href="mailto:City_YoSoySTEM@sdccd.edu" class="btn-r">Get Notified →</a>
   </div>
 
   </main>
@@ -1835,4 +2018,7 @@ ul { list-style: disc; padding-left: 20px; }
     <div class="footer-college-links">
       <ul>
         <li><a href="https://www.sdccd.edu" target="_blank" rel="noopener">San Diego Community College District</a></li>
-        <li><a href="https://www.sdcity.edu">San Diego
+        <li><a href="https://www.sdcity.edu">San Diego City College</a></li>
+      </ul>
+    </div>
+  </div>
